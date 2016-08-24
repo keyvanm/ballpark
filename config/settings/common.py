@@ -29,7 +29,7 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
 
     # Useful template tags:
-    # 'django.contrib.humanize',
+    'django.contrib.humanize',
 
     # Admin
     'django.contrib.admin',
@@ -46,6 +46,8 @@ LOCAL_APPS = (
     # custom users app
     'ballpark.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'ballpark.ventures',
+    'ballpark.cashflows',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
