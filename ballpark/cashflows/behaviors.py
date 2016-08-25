@@ -3,9 +3,12 @@ from django_extensions.db.models import TimeStampedModel
 from djmoney.models.fields import MoneyField
 from model_utils import Choices
 
+from ballpark.ventures.models import Venture
+
 
 class AbstractCashFlow(TimeStampedModel):
     amount = MoneyField(max_digits=20, decimal_places=2, default_currency='USD')
+    venture = models.ForeignKey(Venture)
 
     class Meta:
         abstract = True
