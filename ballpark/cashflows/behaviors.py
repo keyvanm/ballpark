@@ -7,8 +7,10 @@ from ballpark.ventures.models import Venture
 
 
 class AbstractCashFlow(TimeStampedModel):
-    amount = MoneyField(max_digits=20, decimal_places=2, default_currency='USD')
     venture = models.ForeignKey(Venture)
+    name = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
+    amount = MoneyField(max_digits=20, decimal_places=2, default_currency='USD')
 
     class Meta:
         abstract = True

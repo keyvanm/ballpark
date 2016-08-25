@@ -236,4 +236,4 @@ AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
-CURRENCIES = ('USD', 'CAD')
+CURRENCIES = ('USD', )
