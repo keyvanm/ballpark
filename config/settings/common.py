@@ -39,6 +39,7 @@ THIRD_PARTY_APPS = (
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+    'djmoney',
 )
 
 # Apps specific for this project go here.
@@ -105,7 +106,6 @@ DATABASES = {
     'default': env.db('DATABASE_URL', default='postgres:///ballpark'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
-
 
 # GENERAL CONFIGURATION
 # ------------------------------------------------------------------------------
@@ -228,7 +228,6 @@ LOGIN_URL = 'account_login'
 # SLUGLIFIER
 AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 
-
 # django-compressor
 # ------------------------------------------------------------------------------
 
@@ -236,5 +235,5 @@ AUTOSLUG_SLUGIFY_FUNCTION = 'slugify.slugify'
 # Location of root django.contrib.admin URL, use {% url 'admin:index' %}
 ADMIN_URL = r'^admin/'
 
-
 # Your common stuff: Below this line define 3rd party library settings
+CURRENCIES = ('USD', 'CAD')
