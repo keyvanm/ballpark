@@ -49,6 +49,7 @@ LOCAL_APPS = (
     # Your stuff: custom apps go here
     'ballpark.ventures',
     'ballpark.cashflows',
+    'ballpark.balance',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
